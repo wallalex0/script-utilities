@@ -4,6 +4,8 @@ import edit
 import restore_backup
 import tree
 
+version = "1.0.0"
+
 
 def start():
     print("\nWhat do you want to do?"
