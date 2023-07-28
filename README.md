@@ -1,5 +1,17 @@
-Put files to edit in this folder, **don't** rename it: 'put files here'. \
-Created in Python 3.7, you should use this version...\
-Start the script via 'start.py'.
+### Features
 
-A nice README, isn't it?
+* Randomize lines
+* Convert xlsx files to csv files
+* Get a list of a file ending and export it in to a separate file
+* Search and replace in file with same file ending, takes some time
+* Restore automatic backup
+
+### How to use
+
+First install Python 3. Download this repository, and open it in the console.
+
+You need to install required dependencies, these can be installed by `pip install -r requirements.txt`.
+
+Put files to use in the folder `input`.
+
+Start the script via `python start.py`.
