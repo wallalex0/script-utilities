@@ -1,6 +1,6 @@
 import csv
 import os
-from datetime import datetime
+from datetime import datetime, timedelta
 from icalendar import Calendar
 
 
@@ -27,6 +27,7 @@ def export():
         calendar = Calendar.from_ical(fileReader.read())
 
     rows = []
+    totalTime = timedelta()
 
     for component in calendar.walk():
         if component.name != "VEVENT":
@@ -40,9 +41,11 @@ def export():
         end = to_datetime(component.get("dtend").dt)
         description = str(component.get("description", ""))
 
-        rows.append([summary, start.strftime("%Y-%m-%d %H:%M:%S"), end.strftime("%Y-%m-%d %H:%M:%S"), description.replace("\n", " ")])
+        rows.append([summary, start.strftime("%Y-%m-%d %H:%M:%S"), end.strftime("%Y-%m-%d %H:%M:%S"), str(end - start), description.replace("\n", " ")])
 
         rows.sort(key=lambda x: x[1])
+
+        totalTime += end - start
 
     try:
         with open(f"output/{files[selection]}.csv", "w", newline="", encoding="utf-8") as fileWriter:
@@ -51,5 +54,6 @@ def export():
             writer.writerows(rows)
 
         print(f"Saved {len(rows)} matching events to output/{files[selection]}.csv")
+        print(f"Total time: {totalTime}")
     except PermissionError:
         print("\nPermission denied, File is not accessible.")
