@@ -6,6 +6,7 @@
 * Convert xlsx files to csv files
 * Get a list of a file ending and export it in to a separate file
 * Search and replace in file with same file ending, takes some time
+* Generate `.csv` files from `.ics` calendar events, with timestamps, descriptions and times
 * Restore automatic backup
 
 ## How to use

@@ -2,7 +2,7 @@
 ### New stuff
 - A script to randomize lines
 - A script to convert XLSX files to `.csv` files
-- A script to generate `.csv` from `.ics` calendar events, with timestamps descriptions and times
+- A script to generate `.csv` from `.ics` calendar events, with timestamps, descriptions and times
 ### Changes
 - Internal restructure (move scripts to `scripts` folder)
 - Add `LICENSE` file
