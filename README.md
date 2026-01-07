@@ -1,4 +1,6 @@
-### Features
+# Script utilities
+
+## Features
 
 * Randomize lines
 * Convert xlsx files to csv files
@@ -6,7 +8,7 @@
 * Search and replace in file with same file ending, takes some time
 * Restore automatic backup
 
-### How to use
+## How to use
 
 First install Python 3. Download this repository, and open it in the console.
 

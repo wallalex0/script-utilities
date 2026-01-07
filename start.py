@@ -7,10 +7,11 @@ import scripts.restore_backup as restore_backup
 import scripts.tree as tree
 import scripts.ics as ics
 
-version = "1.0.0"
+version = "1.1.0"
 
 
 def start():
+    print(f"Starting script utilities v{version}.")
     print("\nWhat do you want to do?"
           "\n 0 --- Randomize lines"
           "\n 1 --- Convert xlsx files to csv files"
