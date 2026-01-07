@@ -1,5 +1,5 @@
 import os
-import tree
+import scripts.tree as tree
 
 
 def do_restore_backup(file_end):

@@ -1,6 +1,6 @@
 # Edit found files
 
-import tree
+import scripts.tree as tree
 import fileinput
 
 search = []
