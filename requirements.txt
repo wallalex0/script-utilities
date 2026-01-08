@@ -1,2 +1,8 @@
 pandas
 icalendar
+opencv-python
+pytesseract
+pdf2image
+numpy
+pandas-stubs
+openpyxl

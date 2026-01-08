@@ -4,7 +4,6 @@ import os
 from os import walk
 
 root_path = os.path.dirname(os.path.abspath(__file__)) + '..\\input'
-print('\nRootpath: \n' + root_path)
 
 
 def get_file_end():
