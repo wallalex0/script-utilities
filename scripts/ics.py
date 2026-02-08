@@ -50,7 +50,7 @@ def export():
     try:
         with open(f"output/{files[selection]}.csv", "w", newline="", encoding="utf-8") as fileWriter:
             writer = csv.writer(fileWriter)
-            writer.writerow(["Summary", "Start Time", "End Time", "Description"])
+            writer.writerow(["Summary", "Start Time", "End Time", "Duration", "Description"])
             writer.writerows(rows)
 
         print(f"Saved {len(rows)} matching events to output/{files[selection]}.csv")
