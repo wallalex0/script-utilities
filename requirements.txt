@@ -6,3 +6,4 @@ pdf2image
 numpy
 pandas-stubs
 openpyxl
+pypdf
