@@ -8,6 +8,7 @@
 * Search and replace in file with the same file ending, takes some time
 * Generate `.csv` files from `.ics` calendar events, with timestamps, descriptions and times
 * Export data from PDF tables
+* Export data from PDF forms
 * Restore automatic backup
 
 ## How to use
