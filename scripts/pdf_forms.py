@@ -22,7 +22,7 @@ def clean_value(field):
 
 
 def extract_forms():
-    print('\nExtracting PDF forms...')
+    print('\nExtracting PDF forms...\n')
     
     input_folder = "input/"
     output_folder = "output/"
@@ -33,13 +33,13 @@ def extract_forms():
     pdf_files = [f for f in os.listdir(input_folder) if f.endswith(".pdf")]
     
     if not pdf_files:
-        print("No PDF files found in input folder.")
+        print("No PDF files are found in the input folder.\n")
         return
 
     data = []
 
     for file in pdf_files:
-        print(f" Processing {file}...")
+        print(f"Processing {file}...")
         pdf_path = os.path.join(input_folder, file)
         try:
             reader = PdfReader(pdf_path)
@@ -52,7 +52,7 @@ def extract_forms():
 
             data.append(row)
         except Exception as e:
-            print(f" Error processing {file}: {e}")
+            print(f"Error processing {file}: {e}")
 
     if data:
         df = pd.DataFrame(data)
